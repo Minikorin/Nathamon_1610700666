@@ -1,35 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class CalculatorUI : MonoBehaviour
-{
-    public Text displayText;
-
-    void Start()
-    {
-
-        Calculator.intance.OnInput += OnInput;
-        
-        Calculator.intance.OnInputSound += OnInputSound;
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnInputSound(int soundIndex)
-    {
-        
-    }
-    public void OnInput(string input)
-    {
-        
-        Debug.Log(input);
-        displayText.text = input;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cab388080988683ddfe72386bdeb7dc342d5070a6bb864a1e425a1dc3205fb8b
+size 637
